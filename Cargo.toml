@@ -1,0 +1,12 @@
+[package]
+name = "strawberry_rpc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.94"
+colored = "2.2.0"
+discord-rich-presence = "0.2.5"
+hhmmss = "0.1.0"
+mpris = "2.0.1"
+regex = "1.11.1"
