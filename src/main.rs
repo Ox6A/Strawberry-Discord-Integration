@@ -45,6 +45,6 @@ fn find_player(client: &mut DiscordIpcClient) -> Result<()> {
     let time_remaining_f = format!("{} / {}", time::Duration::from_secs(track_elapsed.as_secs()).hhmmss(), time::Duration::from_secs(track_length.as_secs()).hhmmss());
 
     println!("{} Title: {}", "Info:".blue(), title);
-    client.set_activity(activity::Activity::new().state(&time_remaining_f).details(&title).activity_type(activity::ActivityType::Listening).assets(activity::Assets::new().large_image("untitled"))).map_err(|e| anyhow::Error::msg(e.to_string()))?;
+    client.set_activity(activity::Activity::new().state(&time_remaining_f).details(&title).activity_type(activity::ActivityType::Listening).assets(activity::Assets::new().large_image(""))).map_err(|e| anyhow::Error::msg(e.to_string()))?; // Add the asset identifier here (to have the Strawberry logo in your activity)
     Ok(())
 }
