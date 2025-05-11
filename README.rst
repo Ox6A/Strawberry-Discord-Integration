@@ -5,9 +5,11 @@ This program utilises the MPRIS DBus media interface on Linux systems to fetch m
 
 Installation
 -----
+- Create a new application in the Discord Developer portal, and add your Discord Application ID in the .env file. I would suggest adding the Strawberry logo as an app icon.
 .. code:: sh
+
   git clone https://github.com/Ox6A/Strawberry-Discord-Integration.git
   cd Strawberry-Discord-Integration
   cargo build
-  vim .env // Create a new application in the Discord Developer portal, and add your Discord Application ID in the .env file. I would suggest adding the Strawberry logo as an app icon.
+  vim .env // Add your ID here
   ./target/debug/strawberry_rpc
