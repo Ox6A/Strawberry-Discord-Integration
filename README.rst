@@ -11,5 +11,5 @@ Installation
   git clone https://github.com/Ox6A/Strawberry-Discord-Integration.git
   cd Strawberry-Discord-Integration
   cargo build
-  vim .env // Add your ID here
+  vim .env
   ./target/debug/strawberry_rpc
