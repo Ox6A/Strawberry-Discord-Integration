@@ -31,7 +31,7 @@ fn main() -> Result<()> {
 
 fn connect_to_discord(discord_client_id:&str) -> DiscordIpcClient {
     loop {
-        match DiscordIpcClient::new(&discord_client_id) {
+        match DiscordIpcClient::new(discord_client_id) {
             Ok(mut c) => match c.connect() {
                 Ok(_) => return c,
                 Err(_) => {
